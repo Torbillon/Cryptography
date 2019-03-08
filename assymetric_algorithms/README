@@ -1,0 +1,12 @@
+1. In order to properly use the secure message system, you must first ssh into another computer.
+
+2. On one computer, create the "Bob" process by executing target.py using the command:
+./target.py
+
+
+3. On the other computer, create the "Alice" process by executing shooter.py using the command:
+./shooter.py [IP address of Bob]
+
+4. Provide a very short AES key password. For some reason, the execution permissions for these programs were stripped away on my WWU CS account. Therefore I was not able to implement and test arbitrary input length with confidence. I ask that you put in a 3 character password, since that is what is guaranteed to work.
+
+5. You can now send messages back and forth for as long as you want. To properly exit the program, just type in exit for either program.
